@@ -19,7 +19,7 @@ document.getElementById("paperButton").addEventListener("click", paperPick);
 document.getElementById("rockButton").addEventListener("click", rockPick);
 document.getElementById("scissorButton").addEventListener("click", scissorPick);
 
-document.getElementById("paperButton").addEventListener("onmouseover", document.getElementById('myImage').src='pic_bulboff.gif);
+document.getElementById("paperButton").addEventListener("onmouseover", paperPick);
 document.getElementById("rockButton").addEventListener("onmouseover", rockPick);
 document.getElementById("scissorButton").addEventListener("onmouseover", scissorPick);
 
