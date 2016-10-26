@@ -19,58 +19,13 @@ document.getElementById("paperButton").addEventListener("click", paperPick);
 document.getElementById("rockButton").addEventListener("click", rockPick);
 document.getElementById("scissorButton").addEventListener("click", scissorPick);
 
-
-
-function pick(playerNum) {
-	var el = document.getElementById('computerPick');
-	var compNum = Math.floor(Math.random() * 3);
-	//var playerNum = playPick;
-    //var computerChoice = choices[Math.floor(Math.random() * 3)];
-    el.textContent = "The computer picks a: " + choices[compNum];
+document.getElementById("paperButton").addEventListener("onmouseover", document.getElementById('myImage').src='pic_bulboff.gif);
+document.getElementById("rockButton").addEventListener("onmouseover", rockPick);
+document.getElementById("scissorButton").addEventListener("onmouseover", scissorPick);
 
 
 
-    if(compNum==playerNum){
-    	var el = document.getElementById('outcome');
-    	el.textContent = "You tied";
-    	tie+=1;
-    }else if(compNum==1){
-		if(playerNum==2){
-			losses+=1;
-    		var el = document.getElementById('outcome');
-    		el.textContent = "You lost";
-    	}else{
-    		wins+=1;
-    		var el = document.getElementById('outcome');
-    		el.textContent = "You won!";	
-    	}
-    }else if(compNum==2){
-    	if(playerNum==3){
-			losses+=1;
-    		var el = document.getElementById('outcome');
-    		el.textContent = "You lost";
-    	}else{
-    		wins+=1;
-    		var el = document.getElementById('outcome');
-    		el.textContent = "You won!";	
-    	}
 
-    }else if(compNum==3){
-    	if(playerNum==1){
-			losses+=1;
-    		var el = document.getElementById('outcome');
-    		el.textContent = "You lost";
-    	}else{
-    		wins+=1;
-    		var el = document.getElementById('outcome');
-    		el.textContent = "You won!";	
-    	}
-    }
-
-
-    var el = document.getElementById('winLoss');
-    el.textContent = "Your win/loss/tie ratio is: " + wins + "/" + losses + "/" + tie;
-}
 
 
 
