@@ -19,16 +19,6 @@ document.getElementById("paperButton").addEventListener("click", paperPick);
 document.getElementById("rockButton").addEventListener("click", rockPick);
 document.getElementById("scissorButton").addEventListener("click", scissorPick);
 
-document.getElementById("paperButton").addEventListener("onmouseover", paperPick);
-document.getElementById("rockButton").addEventListener("onmouseover", rockPick);
-document.getElementById("scissorButton").addEventListener("onmouseover", scissorPick);
-
-
-
-
-
-
-
 function paperPick() {
 	var el = document.getElementById('computerPick');
     var computerChoice = choices[Math.floor(Math.random() * 3)];
