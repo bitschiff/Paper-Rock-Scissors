@@ -24,7 +24,7 @@ document.getElementById("rockButton").addEventListener("mouseover", rockOver);
 document.getElementById("scissorButton").addEventListener("mouseover", scissorOver);
 
 function paperOver(){
-	
+	document.getElementById('paperButton').src='paper-clicked.png';
 }
 
 function paperPick() {
