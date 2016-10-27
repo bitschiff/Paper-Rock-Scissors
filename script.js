@@ -27,6 +27,14 @@ function paperOver(){
 	document.getElementById('paperButton').src='paper-clicked.png';
 }
 
+function rockOver(){
+	document.getElementById('paperButton').src='rock-clicked.png';
+}
+
+function scissorOver(){
+	document.getElementById('paperButton').src='scissor-clicked.png';
+}
+
 function paperPick() {
 	var el = document.getElementById('computerPick');
     var computerChoice = choices[Math.floor(Math.random() * 3)];
